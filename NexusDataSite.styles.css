@@ -1,0 +1,43 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+.page[b-t0j2c2u93t] {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main[b-t0j2c2u93t] {
+    flex: 1;
+    padding-top: 56px; /* navbar height */
+}
+
+.site-footer[b-t0j2c2u93t] {
+    background-color: #1a1a2e;
+    color: #a0a0b0;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.85rem;
+}
+/* /Layout/NavMenu.razor.rz.scp.css */
+.navbar[b-dyged5a1ym] {
+    background-color: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand[b-dyged5a1ym] {
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: -0.02em;
+}
+
+[b-dyged5a1ym] .nav-link {
+    color: #d0d0e0 !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.2s;
+}
+
+[b-dyged5a1ym] .nav-link:hover,
+[b-dyged5a1ym] .nav-link.active {
+    color: #ffffff !important;
+}

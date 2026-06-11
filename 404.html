@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexusData — Exploitez vos données d'essais</title>
+    <base href="/NexusDataSite/" />
+    <link href="_framework/dotnet.sa3y5uthut.js" rel="preload" as="script" fetchpriority="high" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="images/Logo_simple_bleu.svg" />
+    <link href="NexusDataSite.styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <script type="importmap">{
+  "imports": {
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.958z1vx7fr.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.rjbmzc4jpg.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.r2kbxkuujc.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.sa3y5uthut.js"
+  },
+  "scopes": {}
+}</script>
+</head>
+
+<body>
+    <div id="app">
+        <img src="images/Logo_simple_bleu.svg" alt="NexusData" style="display:block;margin:15vh auto 1.5rem;height:64px;" />
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="." class="reload">Reload</a>
+        <span class="dismiss">🗙</span>
+    </div>
+    <script src="_framework/blazor.webassembly.958z1vx7fr.js" autostart="false"></script>
+    <script>
+      Blazor.start({
+        webAssembly: {
+          loadBootResource: function (type, name, defaultUri, integrity) {
+            return fetch(defaultUri, { cache: 'no-cache' });
+          }
+        }
+      });
+    </script>
+</body>
+
+</html>
